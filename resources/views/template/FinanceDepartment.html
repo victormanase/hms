@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Finance Department</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+ <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>H</b>M</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>HMRS</b></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          
+          
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="dist/img/avatar04.png" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Humphrey pantaleo</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="dist/img/avatar04.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Humphrey pantaleo - Web Developer
+                  <small>Computer engineer</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+            
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <!-- <li class="header">HEADER</li> -->
+        <!-- Optionally, you can add icons to the links -->
+      <li class="treeview"><a href="#"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+        
+       
+           
+          
+
+        <li class="treeview">
+          <a href="#"><i class="fa fa-gears"></i> <span>Company Settings</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li> <a href="#"> <i class="fa fa-circle-o"></i>Departments</a></li>
+            <li><a href="#"> <i class="fa fa-circle-o"></i>Designations</a></li>
+            <li><a href="#"> <i class="fa fa-circle-o"></i>Salary Sales</a></li>
+            <li><a href="#"> <i class="fa fa-circle-o"></i> Allowances</a></li>
+            <li><a href="#"> <i class="fa fa-circle-o"></i>Deductions</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Banks</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Nationalities</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Leave Types</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Qualifications</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Work Stations</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>My Company</a></li>
+            <li class="treeview">
+            <a href="#">Residental Area
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="#"><i class="fa fa-circle-o"></i>Add Country</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>Add Region</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>Add Street</a></li>
+              <li><a href="#"><i class="fa fa-circle-o"></i>Add Postal Address</a></li>
+            </ul>
+            </li>
+            
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-user"></i> <span>Employees</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>Add Employee</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>List Employee</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Left Employee</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-group"></i> <span>Recruitment</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>Vacancy</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Application</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Field Student</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Volunteers</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Interns</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-book"></i> <span>Training</span></a></li>
+        <li><a href="#"><i class="fa fa-mortar-board"></i> <span>Schoolarship</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-user-plus"></i> <span>User Management</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i>Privelage</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Roles</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Users</a></li>
+          
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+      FINANCE DEPARTMENT
+        <!-- <small>Scales</small> -->
+      </h1>
+      <!-- <ol class="breadcrumb">
+        <button type="button" class="btn  btn-default  fa fa-plus">  Add Finance</button>
+        
+      </ol> -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+      <div class="row">
+        <div class="col-md-4">
+          <!-- Line chart -->
+          <!-- <div class="box box-primary"> -->
+           <!--  <div class="box-header with-border"> -->
+              
+
+             
+
+              <!-- <div class="box-tools pull-right">
+             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                
+              </div> -->
+            <!-- </div> -->
+            <div class="box-body">
+             <img src="dist/img/avatar04.png" class="media-object  d-block" 
+                 style="width:200px">
+                  <P >EMPLOYEE</P>
+            </div>
+            <!-- /.box-body  <img src="dist/img/avatar04.png" class="img-circle" alt="User Image">-->
+          <!-- </div> -->
+          </div>
+
+          <div class="col-md-4">
+          <!-- Line chart -->
+         <div class="box-body">
+             <img src="dist/img/avatar04.png" class="media-object  d-block" 
+                 style="width:200px">
+                  <P >SUPERVISOR IMAGE</P>
+            </div>
+          </div>
+          <div class="col-md-4">
+          <!-- Line chart -->
+          <div class="box-body">
+             <img src="dist/img/avatar04.png" class="media-object  d-block" 
+                 style="width:200px">
+                  <P >SALARY OVERVIEW</P>
+            </div>
+          </div>
+          </div>
+          <!--THE END OF  IMAGE-->
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Line chart -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <i class="fa fa-bar-chart-o"></i>
+
+              <h3 class="box-title">Line Chart</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                
+              </div>
+            </div>
+            <div class="box-body">
+              <div id="line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body-->
+          </div>
+          </div>
+          </div>
+          <!--THE END OF  THE LINE GRAPH-->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">List Of Employees</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  
+                  <th>Name</th>
+                    <th>Designation</th>
+                  <th>Status</th>
+                
+                  <th>Action</th>
+                  
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 4.0xfssgdsgfdfdfdsdd
+                  </td>
+                  <td>Win 95+</td>
+                  <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.0
+                  </td>
+                  <td>Win 95+</td>
+                  <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 5.5
+                  </td>
+                  <td>Win 95+</td>
+                  <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet
+                    Explorer 6
+                  </td>
+                  <td>Win 98+</td>
+                 <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                </tr>
+                <tr>
+                  <td>Trident</td>
+                  <td>Internet Explorer 7</td>
+                  <td>Win XP SP2+</td>
+                 <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                <tr>
+                  <td>Trident</td>
+                  <td>AOL browser (AOL desktop)</td>
+                  <td>Win XP</td>
+                 <td colspan="2">
+                  <div class="pull-left" >
+                   <button type="button" class="btn btn-block btn-primary btn-xs">Edit</button>
+                   </div>
+                    <div class="pull-left" style="padding-left: 2em"> 
+                   <button type="button" class="btn btn-block btn-danger btn-xs">Delete</button>
+                    </div>
+                   </td>
+                </tr>
+                
+               
+                </tbody>
+                <tfoot>
+                <tr>
+                  <th>Rendering engine</th>
+                  <th>Browser</th>
+                  <th>Platform(s)</th>
+                  <th>Engine version</th>
+                  
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+     <!--    </div> -->
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  </div>
+
+
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<script src="bower_components/Flot/jquery.flot.js"></script>
+<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+<script src="bower_components/Flot/jquery.flot.resize.js"></script>
+<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+<script src="bower_components/Flot/jquery.flot.pie.js"></script>
+<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+<script src="bower_components/Flot/jquery.flot.categories.js"></script>
+<!-- page script -->
+<script>
+/*
+     * TABLE 
+     * ----------
+     */
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+
+</script>
+  <script>
+  $(function () {
+    
+
+    /*
+     * LINE CHART
+     * ----------
+     */
+    //LINE randomly generated data
+
+    var sin = [], cos = []
+    for (var i = 0; i < 14; i += 0.5) {
+      sin.push([i, Math.sin(i)])
+      cos.push([i, Math.cos(i)])
+    }
+    var line_data1 = {
+      data : sin,
+      color: '#3c8dbc'
+    }
+    var line_data2 = {
+      data : cos,
+      color: '#00c0ef'
+    }
+    $.plot('#line-chart', [line_data1, line_data2], {
+      grid  : {
+        hoverable  : true,
+        borderColor: '#f3f3f3',
+        borderWidth: 1,
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+        shadowSize: 0,
+        lines     : {
+          show: true
+        },
+        points    : {
+          show: true
+        }
+      },
+      lines : {
+        fill : false,
+        color: ['#3c8dbc', '#f56954']
+      },
+      yaxis : {
+        show: true
+      },
+      xaxis : {
+        show: true
+      }
+    })
+    //Initialize tooltip on hover
+    $('<div class="tooltip-inner" id="line-chart-tooltip"></div>').css({
+      position: 'absolute',
+      display : 'none',
+      opacity : 0.8
+    }).appendTo('body')
+    $('#line-chart').bind('plothover', function (event, pos, item) {
+
+      if (item) {
+        var x = item.datapoint[0].toFixed(2),
+            y = item.datapoint[1].toFixed(2)
+
+        $('#line-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
+          .css({ top: item.pageY + 5, left: item.pageX + 5 })
+          .fadeIn(200)
+      } else {
+        $('#line-chart-tooltip').hide()
+      }
+
+    })
+    /* END LINE CHART */
+  })
+ 
+</script>
+</body>
+</html>

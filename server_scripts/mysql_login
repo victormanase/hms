@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+MYSQL_USER="homestead"
+MYSQL_PASSWORD="secret"
+
+
+mysql -u $MYSQL_USER -p$MYSQL_PASSWORD homestead
